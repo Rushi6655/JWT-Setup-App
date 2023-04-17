@@ -18,4 +18,8 @@ public class HomeController {
     public ResponseEntity<RequestObj> addUser(@RequestBody RequestObj user){
         return new ResponseEntity<>(user, HttpStatus.FOUND);
     }
+    @GetMapping("/home")
+    public String getH(@RequestBody RequestObj user){
+        return "dhanshree mam";
+    }
 }
